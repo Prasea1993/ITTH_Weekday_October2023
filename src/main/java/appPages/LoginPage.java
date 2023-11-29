@@ -26,8 +26,6 @@ public class LoginPage {
     private By selectLocation=By.id("location");
     private By buttonLogin=By.xpath("//button[@type='submit' and text()='Login']");
 
-    // ===> //tagName[@attributeName='attributeValue']
-    // ===> //button[@type='submit' and text()='Login'] // simple xpath
 
 
     // Methods

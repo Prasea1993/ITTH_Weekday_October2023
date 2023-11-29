@@ -11,8 +11,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>7</source>
-          <target>7</target>
+          <source>11</source>
+          <target>11</target>
         </configuration>
       </plugin>
     </plugins>
@@ -51,7 +51,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
-      <scope>test</scope>
+
     </dependency>
 
 
@@ -60,7 +60,7 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.8.0</version>
-      <scope>test</scope>
+
     </dependency>
 
 
@@ -73,9 +73,6 @@
       <version>3.9</version>
 
     </dependency>
-
-
-
 
 
     <dependency>
@@ -192,33 +189,60 @@
 
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
-      <version>7.14.0</version>
+      <version>7.0.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>7.0.0</version>
+    </dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-junit</artifactId>
-      <version>7.14.0</version>
-      <scope>test</scope>
+      <version>7.0.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.4.0</version>
+    </dependency>
 
-    <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>klov-reporter</artifactId>
+      <version>5.0.8</version>
+    </dependency>
+
     <dependency>
       <groupId>tech.grasshopper</groupId>
-      <artifactId>extentreports-cucumber6-adapter</artifactId>
-      <version>2.18.0</version>
+      <artifactId>extent-pdf-report</artifactId>
+      <version>1.7.3</version>
     </dependency>
 
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber7-adapter</artifactId>
+      <version>1.1.0</version>
+    </dependency>
 
-
-
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-cucumber7-jvm</artifactId>
+      <version>2.17.2</version>
+    </dependency>
 
 
   </dependencies>
