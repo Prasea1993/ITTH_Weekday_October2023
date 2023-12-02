@@ -10,15 +10,19 @@ public class LoginStepDefinition {
     LoginPage lp =new LoginPage(DriverManager.getDriver());
 
     @Given("user launches app")
-    public void user_launches_app() {
+    public void user_launches_app() throws InterruptedException {
 
-       }
-    @And("user enters username and password")
-    public void user_enters_username_and_password() {
+        DriverManager.getDriver().get("https://demo-lite.mybahmni.in/bahmni/home/index.html#/login");
+        Thread.sleep(3000);
 
-        lp.loginToBhamniApp("superman","Admin123");
 
-        }
+    }
+
+    @And("user enters {string} and {string} and selects {string} and clicks on Login button")
+    public void user_enters_and_and_selects_and_clicks_on_login_button(String username, String password, String clinic) throws InterruptedException {
+
+        lp.loginToBhamniApp(username,password,clinic);
+    }
 
 
 

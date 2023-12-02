@@ -30,7 +30,7 @@ public class LoginTestNgRunner extends AbstractTestNGCucumberTests {
 
     @Override
 
-    @DataProvider(parallel = true)
+    @DataProvider()
 
     public Object[][] scenarios() {
 

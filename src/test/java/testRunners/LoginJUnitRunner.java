@@ -19,12 +19,13 @@ import org.junit.runner.RunWith;
 
                 "timeline:test-output-thread/"
 
-        }
+        },
+        tags="@Registration_DatatableNoHeader"
 
 
 )
 
-public class LoginRunner {
+public class LoginJUnitRunner {
 
 
 

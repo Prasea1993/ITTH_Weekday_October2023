@@ -34,7 +34,6 @@ public class CommonActions {
         driver= driverManager.initBrowser((String) properties.get("browser"));
 
 
-
     }
 
 
@@ -44,8 +43,9 @@ public class CommonActions {
     public void afterEveryScenario(){
 
 
-
-        driver.close();
+       if(driver!=null) {
+           driver.close();
+       }
 
     }
 

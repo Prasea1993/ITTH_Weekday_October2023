@@ -1,4 +1,5 @@
 Feature: Login test
-  Scenario: Validate
+  @Login
+  Scenario: Validate Login with valid data
     Given user launches app
-    And user enters username and password
+    And user enters "superman" and "Admin123" and selects "Bahmni Clinic" and clicks on Login button

@@ -57,11 +57,6 @@ public class DriverManager {
 
 
        getDriver().manage().window().maximize();
-       getDriver().manage().deleteAllCookies();
-
-        getDriver().get("https://demo-lite.mybahmni.in/bahmni/home/index.html#/login");
-        Thread.sleep(3000);
-
        return getDriver();
 
 
