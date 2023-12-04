@@ -20,7 +20,9 @@ import org.testng.annotations.DataProvider;
 
         glue = { "stepDefinitions","CommonActions" },
 
-        features = { "src/test/resources/features" }
+        features = { "src/test/resources/features" },
+
+        tags = "@Login"
 
 )
 

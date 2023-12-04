@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import utilities.ConfigReader;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 public class CommonActions {
@@ -28,7 +29,7 @@ public class CommonActions {
 
 
     @Before(order=1)
-    public void beforeEveryScenario() throws InterruptedException {
+    public void beforeEveryScenario() throws InterruptedException, MalformedURLException {
 
         driverManager=new DriverManager();
         driver= driverManager.initBrowser((String) properties.get("browser"));
