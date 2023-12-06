@@ -22,6 +22,7 @@ public class DriverManager {
 
 
 // These changes are exclusively available in Vasanthi branch
+    // Additional commit
     public static ThreadLocal<WebDriver> localDriver=new ThreadLocal<WebDriver>();
 
    public static synchronized WebDriver getDriver(){
