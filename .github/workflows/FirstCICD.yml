@@ -16,8 +16,8 @@ jobs:
          distribution: 'temurin' # See 'Supported distributions' for available options
          java-version: '11'
 
-         run: mvn clean install -PTestSample
-         working-directory: ITTH_Weekday_October2023
+      - run: mvn clean install -PTestSample
+        working-directory: ITTH_Weekday_October2023
 
          
 
