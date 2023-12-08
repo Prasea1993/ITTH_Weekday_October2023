@@ -3,8 +3,7 @@ name: Test integration for Browserstack
 on :
   workflow_dispatch:
 
-env:
-  APP_DIR:  ITTH_Weekday_October2023
+
 
 jobs:
   build:
@@ -17,7 +16,6 @@ jobs:
          java-version: '11'
 
       - run: mvn clean install -PTestSample
-        working-directory: ITTH_Weekday_October2023
 
          
 
