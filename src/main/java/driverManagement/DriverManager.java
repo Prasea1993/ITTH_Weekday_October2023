@@ -63,6 +63,8 @@ public class DriverManager {
 
            case "Remote BS":
 
+               System.out.println(System.getProperty("GitHub Value"));
+
                MutableCapabilities capabilities = new MutableCapabilities();
                ChromeOptions options = new ChromeOptions();
                options.addArguments("incognito");  // ChromeOptions for starting chrome in incognito mode
