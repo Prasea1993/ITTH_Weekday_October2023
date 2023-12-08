@@ -2,8 +2,11 @@ name: Test integration for Browserstack
 
 on :
   workflow_dispatch:
+   inputs:
+     mavenProfile:
+       required: true
 
-
+     
 
 jobs:
   build:
@@ -15,7 +18,7 @@ jobs:
          distribution: 'temurin' # See 'Supported distributions' for available options
          java-version: '11'
 
-      - run: mvn clean install -PTestSample
+      - run: mvn clean install -P${{ github.event.inputs.mavenProfile }}
 
          
 
