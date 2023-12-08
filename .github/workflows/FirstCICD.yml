@@ -5,6 +5,8 @@ on :
    inputs:
      mavenProfile:
        required: true
+     GitHub Value:
+       required: true
 
      
 
