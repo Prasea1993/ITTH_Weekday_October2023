@@ -5,7 +5,7 @@ on :
    inputs:
      mavenProfile:
        required: true
-     GitHub Value:
+     GitHubValue:
        required: true
 
      
@@ -20,7 +20,7 @@ jobs:
          distribution: 'temurin' # See 'Supported distributions' for available options
          java-version: '11'
 
-      - run: mvn clean install -P${{ github.event.inputs.mavenProfile }}
+      - run: mvn clean install -P${{ github.event.inputs.mavenProfile }} -DGitHubValue=${{ github.event.inputs.GitHubValue }}
 
          
 
