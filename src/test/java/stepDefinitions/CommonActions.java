@@ -32,7 +32,13 @@ public class CommonActions {
     public void beforeEveryScenario() throws InterruptedException, MalformedURLException {
 
         driverManager=new DriverManager();
-        driver= driverManager.initBrowser(System.getProperty("GitHub Value"));
+        if(System.getProperty("GitHubValue")!=null){
+        driver= driverManager.initBrowser(System.getProperty("GitHubValue"));
+        }
+
+        else{
+             driver= driverManager.initBrowser(properties.getProperty("browser"));
+        }
 
 
     }
