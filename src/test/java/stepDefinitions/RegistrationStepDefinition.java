@@ -35,17 +35,6 @@ public class RegistrationStepDefinition {
         registrationPage.createRegistration(firstname,lastname,gender,age);
     }
 
-    @Given("user enters patient data as below")
-    public void user_enters_patient_data_as_below(DataTable dataTable) throws InterruptedException {
-
-
-        List<List<String>> testData= dataTable.asLists();
-
-        registrationPage.createRegistration(testData.get(0).get(0),testData.get(0).get(1),testData.get(0).get(2),testData.get(0).get(3));
-
-
-
-    }
 
 
 
