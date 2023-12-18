@@ -1,4 +1,5 @@
-package stepDefinitions;
+package stepDefinition;
+
 
 import driverManagement.DriverManager;
 import io.cucumber.java.After;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Properties;
 
-public class CommonActions {
+public class CommonAction {
 
     private DriverManager driverManager;
     private ConfigReader configReader;
@@ -32,27 +33,18 @@ public class CommonActions {
     public void beforeEveryScenario() throws InterruptedException, MalformedURLException {
 
         driverManager=new DriverManager();
-        if(System.getProperty("BrowserValue")!=null){
-        driver= driverManager.initBrowser(System.getProperty("BrowserValue"));
-        }
-
-        else{
-             driver= driverManager.initBrowser(properties.getProperty("browser"));
-        }
+        driver= driverManager.initBrowser((String) properties.get("browser"));
 
 
     }
-
-
-
 
     @After
     public void afterEveryScenario(){
 
 
-       if(driver!=null) {
-           driver.close();
-       }
+       // if(driver!=null) {
+          //  driver.close();
+        //}
 
     }
 

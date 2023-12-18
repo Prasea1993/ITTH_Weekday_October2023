@@ -35,10 +35,10 @@ public class ConfigReader {
     public static void main(String[] args) throws IOException {
 
         ConfigReader reader=new ConfigReader();
-      Properties p1=  reader.loadProperties();
+        Properties p1=  reader.loadProperties();
 
 
-      System.out.println(p1.get("browser"));
+        System.out.println(p1.get("browser"));
 
     }
 

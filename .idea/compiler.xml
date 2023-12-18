@@ -7,8 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ITTH_WeekDayBatchAutomationFramework" />
+        <module name="Bahmni" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ITTH_WeekDayBatchAutomationFramework" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
