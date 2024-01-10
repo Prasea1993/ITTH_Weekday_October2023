@@ -14,7 +14,8 @@ public class HomePage {
     }
 
     private By registrationButton =By.id("bahmni.registration");
-    private By clinicalButton =By.id("bahmni.clinical");
+    private By clickClinicalPage= By.xpath("//a[@id='bahmni.clinical']");
+    //private By clinicalButton =By.id("bahmni.clinical");
     private By reportsButton =By.id("bahmni.reports");
     private By interfaceButton =By.id("bahmni.implementer.interface");
     private By labButton =By.id("bahmni.lab");
@@ -29,8 +30,9 @@ public class HomePage {
 
 
     public void navigateToClinicalPage() throws InterruptedException {
-        driver.findElement(clinicalButton).click();
         Thread.sleep(3000);
+        driver.findElement(clickClinicalPage).click();
+        Thread.sleep(5000);
     }
 
     public void navigateToReportsPage() throws InterruptedException {

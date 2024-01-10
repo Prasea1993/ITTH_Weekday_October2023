@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
                 "timeline:test-output-thread/"
 
         },
-        tags="@Registration_DatatableNoHeader"
+        tags="@clinical_DatatableNoHeader"
 
 
 )

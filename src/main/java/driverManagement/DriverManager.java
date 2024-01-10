@@ -23,6 +23,10 @@ public class DriverManager {
 
 // These changes are exclusively available in Vasanthi branch
     // Additional commit
+
+
+    // Amit changes
+
     public static ThreadLocal<WebDriver> localDriver=new ThreadLocal<WebDriver>();
 
    public static synchronized WebDriver getDriver(){
@@ -57,7 +61,9 @@ public class DriverManager {
                break;
 
 
-           case "Remote BS":
+           case "Remote_BS":
+
+               System.out.println(System.getProperty("GitHub Value"));
 
                MutableCapabilities capabilities = new MutableCapabilities();
                ChromeOptions options = new ChromeOptions();
@@ -83,7 +89,7 @@ public class DriverManager {
 
                break;
 
-           case "Remote SL":
+           case "Remote_SL":
                ChromeOptions browserOptions = new ChromeOptions();
                browserOptions.setPlatformName("Windows 11");
                browserOptions.setBrowserVersion("latest");
